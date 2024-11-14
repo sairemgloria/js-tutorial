@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuts</title>
+  </head>
+  <body>
+    <script>
+      // Get the name and make the first character to capitalised and print the name.
+
+      var firstName = prompt("Enter your firstname: ");
+
+      var getFirstChar = firstName.slice(0, 1);
+
+      var capitalisedFirstChar = getFirstChar.toUpperCase();
+
+      var remainingChar = firstName.slice(1, firstName.length);
+
+      var properFormattedName = capitalisedFirstChar + remainingChar;
+
+      console.log("Entered name is : " + properFormattedName);
+
+    </script>
+  </body>
+</html>

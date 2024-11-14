@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var firstPersonName = prompt("Enter first person name:");
+      var secondPersonName = prompt("Enter second person name:");
+
+      var loveScore = Math.random() * 100; // generate random number from 0 - 0.9999999999999999 and multiply it by 100
+      loveScore = Math.floor(loveScore) + 1; // get the number from the loveScore variable and make this to absolute number or rounding it off
+
+      console.log(
+        firstPersonName + " 🧡 " + secondPersonName + " = " + loveScore + "%"
+      );
+    </script>
+  </body>
+</html>

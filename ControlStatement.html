@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var firstPersonName = prompt("Enter first person name:");
+      var secondPersonName = prompt("Enter second person name:");
+
+      var loveScore = Math.random() * 100; // generate random number from 0 - 0.9999999999999999 and multiply it by 100
+      loveScore = Math.floor(loveScore) + 1; // get the number from the loveScore variable and make this to absolute number or rounding it off
+
+      if (loveScore >= 75) {
+        console.log(
+          "Your love score is : " + loveScore + "% that is excellent love!"
+        );
+      } else if (loveScore >= 50) {
+        console.log(
+          "Your love score is : " + loveScore + "% that is great love!"
+        );
+      } else if (loveScore >= 25) {
+        console.log(
+          "Your love score is : " + loveScore + "% that is lil bit love!"
+        );
+      } else {
+        console.log(
+          "Your love score is : " + loveScore + "% that is awful love :(!"
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fibonnaciSequence(input) {
+        var output = [];
+
+        if (input === 1) {
+          output = [0];
+        } else if (input === 2) {
+          output = [0, 1];
+        } else {
+          output = [0, 1];
+          output.push(output[output.length - 2] + output[output.length - 1]);
+
+          if (input === output.length) {
+          } else {
+          }
+        }
+
+        return output;
+      }
+
+      var input = prompt("Enter a number:");
+      fibonnaciSequence(input);
+    </script>
+  </body>
+</html>
